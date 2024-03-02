@@ -24,6 +24,7 @@ function Blog() {
       <form onSubmit={(e) => handleSumit(e)}>
         <input type="text" placeholder="Nom"></input>
         <textarea
+          style={{ border: error ? "1px solid red" : "1px solid #61dafb" }}
           placeholder="Message"
           onChangeCapture={(e) => setContent(e.target.value)}
         ></textarea>
